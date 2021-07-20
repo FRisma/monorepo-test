@@ -14,7 +14,7 @@
 		9D83208726A66390003E81C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D83208626A66390003E81C3 /* Assets.xcassets */; };
 		9D83208A26A66390003E81C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D83208826A66390003E81C3 /* LaunchScreen.storyboard */; };
 		9D8320A926A6733D003E81C3 /* MonoRepoUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 9D8320A826A6733D003E81C3 /* MonoRepoUtils */; };
-		9DD2262426A71FB200C8061C /* SharedUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 9DD2262326A71FB200C8061C /* SharedUIComponents */; };
+		9DD2262726A7252C00C8061C /* SharedUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 9DD2262626A7252C00C8061C /* SharedUIComponents */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D8320A926A6733D003E81C3 /* MonoRepoUtils in Frameworks */,
-				9DD2262426A71FB200C8061C /* SharedUIComponents in Frameworks */,
+				9DD2262726A7252C00C8061C /* SharedUIComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 			name = "monorepo-test";
 			packageProductDependencies = (
 				9D8320A826A6733D003E81C3 /* MonoRepoUtils */,
-				9DD2262326A71FB200C8061C /* SharedUIComponents */,
+				9DD2262626A7252C00C8061C /* SharedUIComponents */,
 			);
 			productName = "monorepo-test";
 			productReference = 9D83207A26A6638F003E81C3 /* monorepo-test.app */;
@@ -379,7 +379,7 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = MonoRepoUtils;
 		};
-		9DD2262326A71FB200C8061C /* SharedUIComponents */ = {
+		9DD2262626A7252C00C8061C /* SharedUIComponents */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9DD2262226A71FB200C8061C /* XCRemoteSwiftPackageReference "SharedUIComponents" */;
 			productName = SharedUIComponents;

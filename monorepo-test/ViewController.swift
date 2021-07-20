@@ -7,6 +7,7 @@
 
 import UIKit
 import Utils
+import SharedUIComponents
 
 class ViewController: UIViewController {
     
@@ -18,10 +19,9 @@ class ViewController: UIViewController {
         return view
     }()
     
-    private let titleLabel: UILabel = {
-        let label = UILabel()
+    private let titleLabel: RoundedLabel = {
+        let label = RoundedLabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .black
         label.numberOfLines = 0
         label.font = .systemFont(ofSize: 16)
         return label
@@ -60,7 +60,7 @@ class ViewController: UIViewController {
             imageView.heightAnchor.constraint(equalToConstant: 400),
         ])
         
-        titleLabel.text = "Please transfer \("30".formattedAsPercentage()) of your salary to:"
+        titleLabel.text = "Please donate \("30".formattedAsPercentage()) if you find this useful to:"
 //        imageView.image = UIImage.utilsImage(named: "qrCode")
         imageView.image = UIImage.qrCodeImage
     }
