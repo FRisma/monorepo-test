@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		9D83208526A6638F003E81C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D83208326A6638F003E81C3 /* Main.storyboard */; };
 		9D83208726A66390003E81C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D83208626A66390003E81C3 /* Assets.xcassets */; };
 		9D83208A26A66390003E81C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D83208826A66390003E81C3 /* LaunchScreen.storyboard */; };
+		9D8320A926A6733D003E81C3 /* MonoRepoUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 9D8320A826A6733D003E81C3 /* MonoRepoUtils */; };
+		9DD2262426A71FB200C8061C /* SharedUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 9DD2262326A71FB200C8061C /* SharedUIComponents */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		9D83208626A66390003E81C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D83208926A66390003E81C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D83208B26A66390003E81C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D8320A426A670D6003E81C3 /* Utils */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Utils; path = ../../Utils; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D8320A926A6733D003E81C3 /* MonoRepoUtils in Frameworks */,
+				9DD2262426A71FB200C8061C /* SharedUIComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				9D83207C26A6638F003E81C3 /* monorepo-test */,
 				9D83207B26A6638F003E81C3 /* Products */,
+				9D8320A526A6726D003E81C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +62,7 @@
 		9D83207C26A6638F003E81C3 /* monorepo-test */ = {
 			isa = PBXGroup;
 			children = (
+				9D8320A426A670D6003E81C3 /* Utils */,
 				9D83207D26A6638F003E81C3 /* AppDelegate.swift */,
 				9D83207F26A6638F003E81C3 /* SceneDelegate.swift */,
 				9D83208126A6638F003E81C3 /* ViewController.swift */,
@@ -65,6 +72,13 @@
 				9D83208B26A66390003E81C3 /* Info.plist */,
 			);
 			path = "monorepo-test";
+			sourceTree = "<group>";
+		};
+		9D8320A526A6726D003E81C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +97,10 @@
 			dependencies = (
 			);
 			name = "monorepo-test";
+			packageProductDependencies = (
+				9D8320A826A6733D003E81C3 /* MonoRepoUtils */,
+				9DD2262326A71FB200C8061C /* SharedUIComponents */,
+			);
 			productName = "monorepo-test";
 			productReference = 9D83207A26A6638F003E81C3 /* monorepo-test.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 9D83207126A6638E003E81C3;
+			packageReferences = (
+				9DD2262226A71FB200C8061C /* XCRemoteSwiftPackageReference "SharedUIComponents" */,
+			);
 			productRefGroup = 9D83207B26A6638F003E81C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +362,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9DD2262226A71FB200C8061C /* XCRemoteSwiftPackageReference "SharedUIComponents" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FRisma/SharedUIComponents";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D8320A826A6733D003E81C3 /* MonoRepoUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MonoRepoUtils;
+		};
+		9DD2262326A71FB200C8061C /* SharedUIComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DD2262226A71FB200C8061C /* XCRemoteSwiftPackageReference "SharedUIComponents" */;
+			productName = SharedUIComponents;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D83207226A6638E003E81C3 /* Project object */;
 }

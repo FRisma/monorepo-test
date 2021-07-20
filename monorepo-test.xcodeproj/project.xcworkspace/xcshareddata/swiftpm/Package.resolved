@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SharedUIComponents",
+        "repositoryURL": "https://github.com/FRisma/SharedUIComponents",
+        "state": {
+          "branch": null,
+          "revision": "348758753af36b15dfccf8dfa365976298d69e9b",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
