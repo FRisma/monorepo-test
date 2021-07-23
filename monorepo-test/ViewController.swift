@@ -60,7 +60,7 @@ class ViewController: UIViewController {
             imageView.heightAnchor.constraint(equalToConstant: 400),
         ])
         
-        titleLabel.text = "Please donate \("30".formattedAsPercentage()) if you find this useful to:"
+        titleLabel.text = "Please donate \("30".percentageFormatted()) if you find this useful to:"
 //        imageView.image = UIImage.utilsImage(named: "qrCode")
         imageView.image = UIImage.qrCodeImage
     }
